@@ -112,5 +112,28 @@ main {
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
-    
+}
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /* Esto es para que la imagen se posicione siempre en el centro, ya que no llenará el total del width */
+    margin-bottom: 50px;
+    background-image: url('./assets/imgs/bitcoin.svg');
+    background-size: cover;
+    background-position: center; /* No importa el tamaño del contenedor, siempre veremos el centro de la imagen */
+    background-repeat: no-repeat; /* Evitamos que la imagen se repeti para ocupar todo el contenedor, si es muy grnade. Se intenta estirar (sin romperse) */
+}
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
 }
