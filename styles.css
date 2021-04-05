@@ -375,8 +375,8 @@ main {
 }
 .plans-container--card {
     position: relative; /* 'relative' para que el titulo (hijo) vaya en 'absolute' */
-    width: 70%;
-    min-width: 230px;
+    width:50%;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
     margin: 50px auto 0;
@@ -416,7 +416,7 @@ main {
     position: absolute;
     font-size: 1.2rem;
     font-weight: 300;
-    left: calc(29.5% );
+    left: calc(50% - 40.2px );
     top: calc(-12% );
 }
 .plan-card--saving {
@@ -442,4 +442,29 @@ main {
     height: 20px;
     background-image: url("./assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+footer {
+    display: flex; /* Es para que las dos secciones se acomoden una al lado de la otra (no arriba y abajo) */
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white)
 }
