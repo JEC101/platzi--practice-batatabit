@@ -67,12 +67,15 @@ header img {
     color: var(--soft-orange);
 }
 .header--title-container .header--button {
-    position: absolute; /* En position absolute puedo usar top, bottom, right y left para mover el elemento (con relative no podría) */
+    position: absolute; /* En position absolute puedo usar top, bottom, right y left para mover el elemento (con relative no podría). Toma como 'position relative' a su padre directo, dándole el beneficio (al absolute) de reposicionarse en cualquier lugar del padre (relative), independientemente de los otros elementos presentes en el mismo contenedor */
+
     left: calc(50% - 118px); /* La opción calc genera un cálculo: le estamos diciendo que se vaya al centro (con el 50%) - La resta del 118px se debe al tamaño del botón (se podría decir que el tamaño del botón es de 118*2, por lo que le resto la mitad del largo del botón, para que el 50% coincida con el centro del botón (no con el inicio) */
+
     top: 270px;
     display: block;
     margin-top: 35px;
     padding: 15px; /* Con el padding lo que hacemos es agrandar el contenedor del texto (el tamaño ya no se limita sólo al texto). Esto me da la posibilidad de darle estilos al contenedor para asemejarlo a un botón. */
+    
     width: 229px;
     height: 48px;
     background-color: var(--off-white);
