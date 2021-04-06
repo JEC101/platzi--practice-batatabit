@@ -1,0 +1,16 @@
+/* Los media queris van separados del CSS pirncipal como buena práctica - Esto eviva q' el usuario baje todos los archivos (salvo que sea necesario) */
+
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.product-cards--container {
+    display: flex;
+    flex-wrap: wrap; /* Para que los contenidos se acomoden sin generar un overflow */
+    width: 930px;
+    margin: 0 auto;
+}
+.plans-container--slider {
+    justify-content: center;
+}
