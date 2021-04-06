@@ -18,7 +18,7 @@
     --just-white: #fff;
 }
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Lo utilizamos para asegurar que el width y height de un elemento sea el mismo que definimos, sin importar el padding y border que tenga el elemento */
     margin: 0;
     padding: 0;
 }
